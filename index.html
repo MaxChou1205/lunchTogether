@@ -1,40 +1,111 @@
 <!DOCTYPE html>
+
 <html>
+
+    
 <head>
   <title>Welcome to Vue</title>
   <script src="https://unpkg.com/vue"></script>
+    <style>
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+    </style>    
 </head>
-<body>
-  <div id="app">
-    <img src="https://vuejs.org/images/logo.png" alt="Vue logo">
-    <h1>{{ greeting }}</h1>
-    <ul>
-      <li>
-        To learn more about Vue, visit
-        <a :href="docsURL" target="_blank">
-          {{ humanizeURL(docsURL) }}
-        </a>
-      </li>
-      <li>
-        For live help with simple questions, check out
-        <a :href="discordURL" target="_blank">
-          the Discord chat
-        </a>
-      </li>
-      <li>
-        For more complex questions, post to
-        <a :href="forumURL" target="_blank">
-          the forum
-        </a>
-      </li>
-    </ul>
-  </div>
+<body >
+    <div id="app">
+        <div id="background" style="margin: -5%;">
+            <img src="../images/background.png" height="100%" width="100%">
+        </div>
+        <div id="tip" style="    width: 300px;
+    position: absolute;
+    top: 100px;
+    left: 350px;">
+            <img src="../images/tip.png" height="100%" width="100%">
+        </div>
+        <div style="position: absolute;top: 0px;border-radius:999em;background-color: #18F053;
+    width: 100px;
+    height: 100px;
+    color: #1C4875;top:20px;">
+            <h1 style="    font-size: 50px;
+    position: relative;
+    left: 25%;
+    top: -45%;text-shadow: 0 0 0.2em #f7fff6;0 0 0.2em #f7fff6;">{{ greeting }}</h1>
+        </div>
+        <div style="    background-color: white;
+    height: 600px;
+    width: 250px;
+    position: absolute;
+    right: 0px;
+    top: 20px">
+            <div style="    width: 115px;
+    background-color: #00DC91;
+    height: 50px;
+    position: relative;
+    left: 10px;
+    top: 10px;">台北市</div>
+            <div style="    width: 115px;
+    background-color: #DBF9D8;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;">新北市</div>
+        </div>
+        <div style="    width: 230px;
+    background-color: #00DC91;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 85px;
+    display: block;">大安區</div>
+        </div>
+            <div style="    width: 230px;
+    background-color: #00DC91;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 120px;
+    display: block;">中山區</div>
+        </div>
+                <div style="    width: 230px;
+    background-color: #DBF9D8;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 155px;
+    display: block;">食堂名稱1</div>
+        </div>
+                <div style="    width: 230px;
+    background-color: #DBF9D8;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 190px;
+    display: block;">食堂名稱2</div>
+        </div>
+                <div style="    width: 230px;
+    background-color: #DBF9D8;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 225px;
+    display: block;">食堂名稱3</div>
+        </div>
+            <div style="    width: 230px;
+    background-color: #00DC91;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 260px;
+    display: block;">萬華區</div>
+        </div>
+    </div>
+
 
   <script>
     var app = new Vue({
       el: '#app',
       data: {
-        greeting: 'Welcome to your Vue.js app!',
+        greeting: '共食',
         docsURL: 'http://vuejs.org/guide/',
         discordURL: 'https://chat.vuejs.org',
         forumURL: 'http://forum.vuejs.org/'
